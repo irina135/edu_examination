@@ -1,0 +1,115 @@
+.footer__container {
+  //display: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1920px;
+  height: 200px;
+  margin: 0 auto;
+  padding-left: 100px;
+  padding-right: 100px;
+  @media @breakpoint-X-Large {
+    height: 150px;
+  }
+  @media @breakpoint-Large {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  @media @breakpoint-Medium {
+    height: 120px;
+  }
+}
+.footer__copyright {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  opacity: .7;
+  @media @breakpoint-Medium {
+    font-size: 16px;
+  }
+  @media @breakpoint-Small {
+    display: none;
+  }
+}
+.footer__social {
+  display: flex;
+  justify-content: space-between;
+  @media @breakpoint-Small {
+    display: none;
+  }
+}
+.social__link {
+  margin-right: 110px;
+  a {
+    text-decoration: none;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.8;
+    color: #1f1f1f;
+    opacity: .7;
+    @media @breakpoint-Medium {
+      font-size: 16px;
+    }
+  }
+  @media @breakpoint-Large {
+    margin-right: 20px;
+}
+}
+.social__icon--wrap {
+  display: flex;
+  align-items: end;
+  gap: 44px;
+  img {
+    width: 28px;
+    height: 28px;
+    opacity: .7;
+    @media @breakpoint-Large {
+      width: 20px;
+      height: 28px;
+      gap: 2px;
+    }
+  }
+  @media @breakpoint-X-Large {
+    gap: 15px;
+  }
+  @media @breakpoint-Medium {
+    gap: 10px;
+  }
+}
+//footerMobile
+.footerMobile {
+  display: none;
+  @media @breakpoint-Small {
+    display: inline-block;
+    width: 375px;
+    height: 196px;
+    margin: 0 auto;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    align-items: center;
+  }
+  .social__link {
+    width: 152px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    a {
+      font-size: 16px;
+      letter-spacing: .8px;
+      color: #4A2AD3;
+    }
+  }
+  .social__icon--wrap {
+    width: 157px;
+    margin: 0 auto;
+    margin-bottom: 36px;
+    justify-content: space-between;
+  }
+  .footer__copyright {
+    @media @breakpoint-Small {
+      display: flex;
+      width: 200px;
+      margin: 0 auto;
+    }
+  }
+}
